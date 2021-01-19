@@ -1,0 +1,64 @@
+import {Link} from 'gatsby'
+import {FiInfo} from 'react-icons/fi'
+import {Counter, LikeButton} from '../components/Complete'
+
+
+<section className="mdx-page">
+
+## My first MDX File 
+
+
+_I'm baby fixie lomo hoddie street I'm baby fixie lomo hoddie streetI'm baby fixie lomo hoddie streetI'm baby fixie lomo hoddie streetI'm baby fixie lomo hoddie streetI'm baby fixie lomo hoddie street
+
+Banjo +1 tumiec,
+
+<div className="code">
+
+```js
+const firstName = 'Shahnawzz'
+```
+</div> 
+
+<Link to="/posts" className="btn center-btn">All posts</Link>
+
+<div className="nice-text">
+
+<h3>Nice text</h3>
+
+<FiInfo className="nice-text-icon"></FiInfo>
+
+I'm baby forage bicycle rights hell of pop-up, tumeric kogi vexillologist messenger bag iceland XOXO flannel poke pabst retro gentrify. Wolf tote bag cornhole post-ironic master cleanse drinking vinegar. Everyday carry pickled wayfarers intelligentsia, irony sartorial la croix plaid ramps bespoke hashtag YOLO vaporware. Ennui blog retro banjo, scenester narwhal ramps cliche hexagon. Occupy iceland chartreuse, mumblecore vexillologist tbh letterpress tofu freegan activated charcoal mlkshk narwhal photo booth church-key. 8-bit PBR&B kinfolk, taxidermy art party glossier distillery shabby chic activated charcoal microdosing ennui paleo jean shorts plaid yuccie.
+
+</div>    
+
+<h2>React Compnents</h2>
+
+<Counter />
+
+```jsx 
+import React from "react"
+import styled from "styled-components"
+import { AiOutlineLike } from "react-icons/ai"
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+} 
+```
+
+<LikeButton />
+
+</section>
